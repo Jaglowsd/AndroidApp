@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CafeService</string>
+    <string name="view_order">View Order</string>
+    <string name="add_order">Add to Order</string>
+    <string name="button_submit">Submit Order</string>
+    <string name="button_remove">Remove</string>
+    <string name="label_name">Name</string>
+    <string name="label_phone">Phone</string>
+</resources>

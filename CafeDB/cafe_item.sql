@@ -1,0 +1,52 @@
+-- MySQL dump 10.13  Distrib 5.6.24, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: cafe
+-- ------------------------------------------------------
+-- Server version	5.6.26-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `item`
+--
+use cafe;
+DROP TABLE IF EXISTS `item`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `item` (
+  `iditem` int(11) NOT NULL AUTO_INCREMENT,
+  `product` int(11) NOT NULL,
+  `ordernumber` int(11) NOT NULL,
+  PRIMARY KEY (`iditem`)
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `item`
+--
+
+LOCK TABLES `item` WRITE;
+/*!40000 ALTER TABLE `item` DISABLE KEYS */;
+INSERT INTO `item` VALUES (1,4,2),(2,3,2),(3,2,1),(4,6,1),(5,1,12),(6,3,13),(7,1,14),(8,1,15),(9,5,15),(10,1,16),(11,2,17),(12,3,18),(13,2,19),(14,2,20),(15,1,21),(16,1,22),(17,1,23),(18,1,24),(19,1,25),(20,1,26),(21,3,27),(22,6,27),(23,1,28),(24,4,28),(25,1,29),(26,1,30),(27,3,30),(28,4,30),(29,5,30),(30,1,31),(31,3,31),(32,4,31),(33,1,32),(34,3,32),(35,6,32),(36,1,33),(37,4,33),(38,8,33),(39,2,34),(40,8,34),(41,7,34),(42,4,35),(43,7,36),(44,5,36),(45,1,36),(46,1,37),(47,5,37),(48,7,37),(49,1,38),(50,8,38),(51,7,38),(52,1,39),(53,6,39),(54,1,40),(55,7,40),(56,3,41),(60,7,43),(61,1,45),(62,7,45),(63,1,46),(64,7,46),(65,1,47),(66,8,47);
+/*!40000 ALTER TABLE `item` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-11-04 12:23:33
