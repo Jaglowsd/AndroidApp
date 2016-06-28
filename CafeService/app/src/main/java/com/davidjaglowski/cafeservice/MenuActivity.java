@@ -16,6 +16,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
+// Testing to see if version control on git is working properly
 public class MenuActivity extends AppCompatActivity {
 
     public final static String ORDER_NUMBER = "com.davidjaglowski.cafeservice.ORDER_NUMBER";
@@ -140,7 +141,7 @@ public class MenuActivity extends AppCompatActivity {
 
     private void loadHandles(String json) {
         handles = null;
-        String[] handleStrs = null;
+        String[] handleStrs;
 
         ListView handlesList = (ListView) findViewById(R.id.menu_list);
 
@@ -157,7 +158,7 @@ public class MenuActivity extends AppCompatActivity {
         }
 
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, handleStrs);
         handlesList.setAdapter(adapter);
 
