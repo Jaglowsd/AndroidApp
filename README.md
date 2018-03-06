@@ -1,4 +1,4 @@
-# AndroidApp
+# Lawrence-Cafe-App
 Android application using Android studio, restful web server, and MySQL database
 
 The CafeDB file contains the MySQL tables that were used for the project.
